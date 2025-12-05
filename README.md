@@ -174,6 +174,3 @@ We can also send requests to the leader using the curl command:
 
 ![img_10.png](report_images%2Fimg_10.png)
 
-And here are the logs in the terminal that confirm the correct number of quorum and that the write was successful:
-
-![img_11.png](report_images%2Fimg_11.png)
