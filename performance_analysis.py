@@ -147,14 +147,24 @@ def main() -> None:
         check_data_consistency(label=f"after write_quorum={q}")
 
     # Plot write_quorum vs average latency
+    print("\n=== Generating plot ===")
     plt.figure()
     plt.plot(quorums, avg_latencies, marker="o")
     plt.xlabel("Write Quorum")
     plt.ylabel("Average Write Latency (ms)")
     plt.title("Write Quorum vs Average Latency (semi-synchronous replication)")
+    plt.xlim(left=0)
+    plt.ylim(bottom=0)
     plt.grid(True)
     plt.tight_layout()
     plt.savefig("write_quorum_vs_latency.png")
+    print("Plot saved as 'write_quorum_vs_latency.png'")
+    
+    print("\n=== SUMMARY ===")
+    for q, lat in zip(quorums, avg_latencies):
+        print(f"Quorum {q}: {lat:.2f} ms")
+    
+    print("\n=== Performance analysis complete! ===")
     plt.show()
 
 

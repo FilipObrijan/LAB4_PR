@@ -12,8 +12,8 @@ services:
       # inside the Docker network, leader reaches followers by service name
       - FOLLOWER_URLS=http://follower1:8080,http://follower2:8080,http://follower3:8080,http://follower4:8080,http://follower5:8080
       # delay in milliseconds (simulated network lag)
-      - MIN_DELAY_MS=0.0
-      - MAX_DELAY_MS=100.0
+      - MIN_DELAY_MS=100.0
+      - MAX_DELAY_MS=400.0
     ports:
       - "8000:8080"  # expose leader to the host
     depends_on:

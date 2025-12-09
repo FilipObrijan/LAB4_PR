@@ -145,7 +145,7 @@ python3 performance_analysis.py
 
 And we get the following output showing the average latency for different quorum sizes:
 
-![quorum_vs_latency.png](report_images%2Fquorum_vs_latency.png)
+![write_quorum_vs_latency.png](%2Fwrite_quorum_vs_latency.png)
 
 We also get the following output in the terminal showing the average and median latency values for each quorum size, as well as checks for consistency:
 
