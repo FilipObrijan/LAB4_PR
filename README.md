@@ -169,5 +169,8 @@ We also get the following output in the terminal showing the average and median 
 
 ![img_9.png](report_images%2Fimg_9.png)
 
+## Sending request using curl
+We can also send requests to the leader using the curl command:
 
+![img_10.png](report_images%2Fimg_10.png)
 
